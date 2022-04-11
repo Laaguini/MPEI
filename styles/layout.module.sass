@@ -1,0 +1,102 @@
+.header-wrapper
+  grid-column: 2
+  display: flex
+  justify-content: space-between
+.header-nav
+  display: flex
+  flex-direction: column
+  font-family: Corbel
+  justify-content: start
+  font-weight: bold
+  margin-top: -0.4rem
+
+.header-nav-top
+  font-size: 1.4rem
+  display: flex
+  justify-content: end
+  .nav-link
+    padding: 0.36rem 1.66rem
+    &:hover
+      background-color: #ce5158
+      color: white
+      border-radius: 15px
+      &:after
+        content: ' '
+        display: block
+        background-color: #ce5158
+        position: absolute
+        width: calc(100% + 1.5rem)
+        height: 100%
+        top: 0
+        left: -0.75rem
+        z-index: -1
+        border-radius: 15px
+
+.header-nav-bottom
+  font-size: 0.95rem
+  justify-content: end
+  display: flex
+  .nav-link
+    padding: 1.1rem 1.52rem
+
+.header-extra
+  grid-column: 3
+  box-sizing: border-box
+  padding-top: 0.25rem
+  display: grid
+  grid-template-columns: 1fr auto 3fr
+  .wrapper
+    grid-column: 2
+    display: flex
+    justify-content: center
+    align-items: start
+    gap: 20px
+  a
+    height: 100%
+
+.nav-link
+  position: relative
+  color: #113d63
+  text-decoration: none
+  background-clip: border-box
+
+.footer-wrapper
+  width: 1360px
+  flex-direction: column
+  gap: 66px
+  display: flex
+.footer-info
+  display: grid
+  grid-template-columns: 315px auto 325px
+
+.footer-site-map
+  display: flex
+  flex-direction: column
+  gap: 1rem
+  .footer-link
+    background-color: white
+    padding: 0.95rem
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #034092
+
+.footer-contact-info-wrapper
+  display: flex
+  justify-content: center
+
+.footer-contact-info
+  line-height: 30px
+  color: #abccfa
+  flex-direction: column
+  display: flex
+  justify-content: space-between
+  .wrapper
+    flex-direction: column
+    display: flex
+    gap: 1rem
+  span
+    color: white
+  .title
+    font-weight: bold
+    font-size: 1.11rem
