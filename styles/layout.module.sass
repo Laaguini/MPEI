@@ -13,7 +13,7 @@
 .header-nav-top
   font-size: 1.4rem
   display: flex
-  justify-content: end
+  justify-content: flex-end
   .nav-link
     padding: 0.36rem 1.66rem
     &:hover
@@ -34,7 +34,7 @@
 
 .header-nav-bottom
   font-size: 0.95rem
-  justify-content: end
+  justify-content: flex-end
   display: flex
   .nav-link
     padding: 1.1rem 1.52rem
@@ -97,6 +97,33 @@
     gap: 1rem
   span
     color: white
-  .title
     font-weight: bold
+  .title
     font-size: 1.11rem
+
+.social-networks
+  display: flex
+  gap: 0.75rem
+  flex-direction: row
+  flex-wrap: wrap
+  a
+    display: flex
+    align-items: flex-end
+
+.footer-web-resources
+  .wrapper
+    display: flex
+    gap: 1rem
+    flex-direction: row
+    flex-wrap: wrap
+    .web-resource
+      display: inline-block
+      height: content-box
+
+.web-resources-title
+  font-size: 1.11rem
+  margin-bottom: 2rem
+
+.finances-info
+  display: flex
+  justify-content: center

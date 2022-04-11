@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "../styles/layout.module.sass"
-import Image from 'next/image'
-import logo from '../assets/MPEI_logo.png'
-import disabledPersonMode from "../assets/disabled_person_mode.png"
-import timetable from "../assets/timetable.png"
+import {Image, logo, disabledPersonMode, timetable, tgIcon, vkIcon, webResourcesImages} from "../assets/layout-import"
 
 const navTopLinks = ['Поступление', 'Студенты', 'Образование', 'Наука', 'О филиале']
 const navBottomLinks = ['Сведения об образовательной организации', 'Обращения граждан', 'Единое окно', 'Лаборатории', 'Контакты']
@@ -57,13 +54,21 @@ let Footer = () =>
                             </div>
                         </div>
                         <div className={styles["social-networks"]}>
-
+                            <a href="#"><Image src={vkIcon}/></a>
+                            <a href="#"><Image src={tgIcon}/></a>
                         </div>
                     </div>
                 </div>
-                <div className={styles["footer-web-resources"]}></div>
+                <div className={styles["footer-web-resources"]}>
+                    <div className={styles["web-resources-title"]}>WEB-РЕСУРСЫ:</div>
+                    <div className={styles["wrapper"]}>
+                        {webResourcesImages.map((e, i) => <a key={i} className={styles["web-resource"]} href="#"><Image src={e}/></a>)}
+                    </div>
+                </div>
             </div>
-            <a href="#">Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя, его заместителей, президента и главного бухгалтера</a>
+            <div className={styles["finances-info"]}>
+                <a  href="#">Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя, его заместителей, президента и главного бухгалтера</a>
+            </div>
         </div>
     </footer>
 
