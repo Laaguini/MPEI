@@ -5,6 +5,7 @@ import {Image, logo, disabledPersonMode, timetable, tgIcon, vkIcon, webResources
 const navTopLinks = ['Поступление', 'Студенты', 'Образование', 'Наука', 'О филиале']
 const navBottomLinks = ['Сведения об образовательной организации', 'Обращения граждан', 'Единое окно', 'Лаборатории', 'Контакты']
 const footerSiteMapLinks = ['Приемная комиссия', 'Предуниверситарий', 'Наука', 'О филиале', 'Новости']
+
 let Header = () =>
     <header>
         <div className={styles["header-wrapper"]}>
@@ -32,9 +33,9 @@ let Footer = () =>
     <footer>
         <div className={styles["footer-wrapper"]}>
             <div className={styles["footer-info"]}>
-                <div className={styles["footer-site-map"]}>
+                <nav className={styles["footer-site-map"]}>
                     {footerSiteMapLinks.map((e, i) => <a key={i} href="#" className={styles["footer-link"]}>{e.toUpperCase()}</a>)}
-                </div>
+                </nav>
                 <div className={styles["footer-contact-info-wrapper"]}>
                     <div className={styles["footer-contact-info"]}>
                         <div className={styles["wrapper"]}>
@@ -54,8 +55,8 @@ let Footer = () =>
                             </div>
                         </div>
                         <div className={styles["social-networks"]}>
-                            <a href="#"><Image src={vkIcon}/></a>
-                            <a href="#"><Image src={tgIcon}/></a>
+                            <a href="#"><Image width={42} height={42} src={vkIcon}/></a>
+                            <a href="#"><Image width={42} height={42} src={tgIcon}/></a>
                         </div>
                     </div>
                 </div>
@@ -75,9 +76,9 @@ let Footer = () =>
 let Layout = ({children}) =>
     <>
         <Header/>
-        <main>
-            {children}
-        </main>
+            <main>
+                {children}
+            </main>
         <Footer/>
     </>
 

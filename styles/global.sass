@@ -8,10 +8,16 @@ html
   font-size: 18px
 
 header
-  padding: 36px 0 32px 0
+  padding: 36px 0 16px 0
   box-sizing: border-box
   display: grid
-  grid-template-columns: 1fr 1360px minmax(max-content, 1fr)
+  grid-template-columns: 1fr minmax(max-content, 1360px) minmax(max-content, 1fr)
+  column-gap: 3rem
+  //position: absolute
+  z-index: 1
+  box-shadow: 0 0 130px 0 #000000aa
+  //background-color: #fff
+  //width: 100%
 
 footer
   background-color: #034092
@@ -19,7 +25,17 @@ footer
   display: flex
   justify-content: center
   box-sizing: border-box
-  padding: 46px 0 66px 0
+  padding: 46px 1rem 66px 1rem
   a
     text-decoration: none
     color: white
+.title
+  font-size: 30px
+
+.main-link
+  font-size: 30px
+  background-color: #ce5158
+  padding: 1rem 60px
+  border-radius: 15px
+  color: white
+  text-decoration: none
