@@ -3,6 +3,7 @@ import Layout from "./layout";
 import Carousel from "./carousel";
 import SituationBanner from "./situationBanner";
 import InfoBanner from "./infoBanner";
+import InfoCards from "./infoCards";
 import banner1 from "../assets/info-banner-1.png"
 import banner2 from "../assets/info-banner-2.png"
 
@@ -15,6 +16,7 @@ let Main = () =>
             <div>Всю подробную информацию о поступлении и отслеживать списки поступивших вы можете на сайте приёмной комиссии.</div>
             <a href="https://google.com" className="main-link">ПРИЕМНАЯ КОМИССИЯ МЭИ</a>
         </InfoBanner>
+        <InfoCards />
         <InfoBanner background={banner2}>
             <div className="title">
                 МОДУЛЬНАЯ СИСТЕМА ОБУЧЕНИЯ
