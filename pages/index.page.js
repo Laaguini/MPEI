@@ -4,6 +4,7 @@ import Carousel from "./carousel";
 import SituationBanner from "./situationBanner";
 import InfoBanner from "./infoBanner";
 import InfoCards from "./infoCards";
+import News from "./news"
 import banner1 from "../assets/info-banner-1.png"
 import banner2 from "../assets/info-banner-2.png"
 
@@ -26,6 +27,7 @@ let Main = () =>
                 Не следует, однако забывать, что консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития.
             </div>
         </InfoBanner>
+        <News />
     </Layout>
 
 export default Main;

@@ -1,0 +1,42 @@
+.news
+  display: flex
+  justify-content: center
+  background-color: #e8e8e8
+  padding: 30px 30px 170px 30px
+
+.wrapper
+  width: 1360px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  column-gap: 40px
+  row-gap: 30px
+
+.news-card
+  font-weight: 300
+  font-size: 19px
+  background-color: white
+  border-radius: 15px
+  line-height: 28px
+  overflow: hidden
+  box-shadow: 0 0 10px 0 #00000025
+
+.publication-date
+  color: #343434
+.padding
+  padding: 20px
+
+.thumbnail
+  position: relative
+  bottom: -8px
+  img
+    min-height: 200px
+    height: 100%
+
+.link
+  grid-column-start: 1
+  grid-column-end: 4
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  a
+    grid-column: 2
+    padding: 1rem 0
